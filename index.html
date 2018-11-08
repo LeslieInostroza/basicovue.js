@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CursoVue.js</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- en vue todo tiene que estar encerrado en un container -->
+
+  <div id="container"> <!-- aca se pondra todo el contenido que se trabajara con vue -->
+    <h1>{{titulo}}</h1> <!-- interpolacion, para llamar a la propiedad titulo, que contiene el titulo -->
+    <!-- iterar sobre array de frutas, que esta en datos (ciclo for of) fruta sera iterativo dentro de frutas -->
+    <ul>
+      <li v-for="fruta of frutas">{{fruta.cantidad}} - {{fruta.nombre}}
+        <span v-if="fruta.cantidad === 0"> - Sin stock</span>
+      </li>
+    </ul>
+  </div>
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
