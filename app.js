@@ -7,11 +7,11 @@ const app = new Vue({ // dentro de esta instancia se trabajara con vue, estamos 
   // 'data', contendra los datos.
   el:/* '#app' */ '#container',
   data:{
-    titulo: 'Holito',
-    frutas:/* ['Manzana', 'Pera', 'Platano'] */[
-      {nombre:'Manzana', cantidad: 10},
-      {nombre:'Pera', cantidad: 0},
-      {nombre:'Platano', cantidad: 15}
+    titulo: 'Frutas',
+    frutas:/* ['Frutillas', 'Naranjas', 'Arandanos'] */[
+      {nombre:'Frutillas', cantidad: 10},
+      {nombre:'Naranjas', cantidad: 0},
+      {nombre:'Arandanos', cantidad: 15}
     ]
   }
 })
